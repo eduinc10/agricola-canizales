@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agrícola Canizales S.A.S. | Servicios agrícolas</title>
+<meta name="description" content="Agrícola Canizales S.A.S. — servicios agrícolas, maquinaria y operación de campo.">
+<style>
+:root{--g:#174d2b;--g2:#28733f;--l:#8dbb45;--cream:#f5f2e8;--ink:#17301f;--muted:#657269}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#fffffff5;border-bottom:1px solid #e7ece7}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;gap:11px;align-items:center;color:var(--g);font-weight:800}.mark{width:46px;height:46px;border-radius:14px;background:linear-gradient(145deg,var(--g),var(--g2));color:white;display:grid;place-items:center;font-size:23px}.brand small{display:block;color:#718077;font-size:10px;letter-spacing:1px}nav{display:flex;gap:18px;align-items:center;font-size:14px;font-weight:700}nav a:hover{color:var(--g2)}
+.btn{display:inline-block;padding:13px 20px;border-radius:999px;font-weight:800}.primary{background:var(--g);color:white}.light{background:white;color:var(--g);border:1px solid #d8e2d9}
+.hero{background:radial-gradient(circle at 82% 15%,#dcebc8,transparent 30%),linear-gradient(120deg,#eef5e9,#fff 60%,#f3f7ef)}.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center;padding:80px 0}.tag{display:inline-block;background:#e4f0dd;color:var(--g2);padding:7px 13px;border-radius:999px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.7px}h1{font-size:clamp(42px,6vw,70px);line-height:1.02;letter-spacing:-2.5px;margin:18px 0}h1 span{color:var(--g2)}.hero p{font-size:18px;color:#526058;max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.art{height:420px;border-radius:32px;background:linear-gradient(145deg,#1b5630,#79a944);position:relative;overflow:hidden;box-shadow:0 18px 50px #11321b22}.art:before{content:"";position:absolute;width:330px;height:330px;border-radius:50%;right:-120px;top:-100px;background:#ffffff1c}.artTitle{position:absolute;top:28px;left:28px;color:white;font-weight:800}.artTitle small{display:block;color:#eaf5e8;margin-top:3px}.rows{position:absolute;left:35px;right:35px;bottom:45px;height:280px;display:flex;gap:5px;align-items:end;transform:skewY(-5deg)}.row{flex:1;background:linear-gradient(90deg,#3f7e39,#a3c85c);border-radius:70% 70% 8px 8px}.row:nth-child(1){height:55%}.row:nth-child(2){height:78%}.row:nth-child(3){height:62%}.row:nth-child(4){height:85%}.row:nth-child(5){height:67%}.row:nth-child(6){height:80%}.tractor{position:absolute;right:35px;bottom:35px;font-size:72px}
+section{padding:85px 0}.head{max-width:730px;margin-bottom:35px}.head .tag{margin-bottom:10px}h2{font-size:clamp(30px,4vw,46px);line-height:1.08;margin:0 0 12px}.head p,.card p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:27px;border:1px solid #e5ebe5;border-radius:22px;box-shadow:0 8px 30px #14371e0d}.icon{width:52px;height:52px;border-radius:16px;background:#e9f3df;display:grid;place-items:center;font-size:25px;margin-bottom:16px}.card h3{margin:0 0 8px}
+.about{background:var(--cream)}.aboutGrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}.stat{background:white;border-radius:18px;padding:20px;border:1px solid #e5e8df}.stat b{font-size:27px;color:var(--g);display:block}.stat span{font-size:13px;color:var(--muted)}.checks{display:grid;gap:12px;margin-top:20px}.check{display:flex;gap:10px}.check b{color:var(--g2)}
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:20px}.item{border-left:4px solid var(--l);padding:20px 24px;background:#f8faf7;border-radius:0 18px 18px 0}.item strong{color:var(--g)}
+.cta{background:linear-gradient(120deg,var(--g),#2e7542);color:white}.ctaGrid{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta p{color:#e4efe6;max-width:650px}
+.contact{background:#f6f8f4}.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.box{background:white;border:1px solid #e3e9e2;border-radius:22px;padding:28px}.line{padding:12px 0;border-bottom:1px solid #edf0ec}.line:last-child{border:0}.line b{display:block;font-size:13px;color:#718076}
+footer{background:#102718;color:#dce9df;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px}.foot small{color:#aebdb2}
+@media(max-width:900px){nav{display:none}.heroGrid,.aboutGrid,.contactGrid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr}.ctaGrid{flex-direction:column;align-items:flex-start}}
+@media(max-width:600px){section{padding:65px 0}.cards{grid-template-columns:1fr}.heroGrid{padding:55px 0}.art{height:310px}.stats{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio"><div class="mark">🌿</div><div>AGRÍCOLA CANIZALES S.A.S.<small>NIT 900.765.719-4</small></div></a>
+<nav><a href="#inicio">Inicio</a><a href="#quienes">Quiénes somos</a><a href="#servicios">Servicios</a><a href="#portafolio">Portafolio</a><a href="#contacto">Contacto</a><a class="btn primary" href="#cotizacion">Solicitar cotización</a></nav>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="wrap heroGrid"><div>
+<span class="tag">Servicios agrícolas y operación de campo</span>
+<h1>Cultivando <span>sabor y calidad</span> en cada cosecha.</h1>
+<p>Soluciones para el sector agrícola con experiencia en labores de campo, mantenimiento de cultivos, maquinaria, preparación de suelos, riego y operación de servicios.</p>
+<div class="actions"><a class="btn primary" href="#cotizacion">Solicitar cotización</a><a class="btn light" href="#servicios">Ver servicios</a></div>
+</div>
+<div class="art"><div class="artTitle">AGRÍCOLA CANIZALES<small>Trabajo de campo · Maquinaria · Producción</small></div><div class="rows"><i class="row"></i><i class="row"></i><i class="row"></i><i class="row"></i><i class="row"></i><i class="row"></i></div><div class="tractor">🚜</div></div>
+</div></section>
+
+<section id="servicios"><div class="wrap"><div class="head"><span class="tag">Lo que hacemos</span><h2>Soluciones para las necesidades del campo</h2><p>Una oferta de servicios pensada para apoyar la productividad y la operación agrícola de nuestros clientes.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">🌱</div><h3>Cultivo y mantenimiento</h3><p>Apoyo en labores agrícolas, mantenimiento de cultivos y organización de actividades de campo.</p></article>
+<article class="card"><div class="icon">🚜</div><h3>Maquinaria agrícola</h3><p>Operación y disponibilidad de maquinaria para labores agrícolas y servicios especializados.</p></article>
+<article class="card"><div class="icon">🧑‍🌾</div><h3>Preparación de suelos</h3><p>Servicios de preparación y adecuación de terrenos para actividades agrícolas.</p></article>
+<article class="card"><div class="icon">💧</div><h3>Riegos</h3><p>Apoyo operativo en actividades de riego y manejo de agua según las necesidades del cultivo.</p></article>
+<article class="card"><div class="icon">🌾</div><h3>Alzamiento de caña</h3><p>Experiencia en operación de equipos y coordinación de personal para labores de alzamiento.</p></article>
+<article class="card"><div class="icon">🛠️</div><h3>Servicios de campo</h3><p>Atención de requerimientos agrícolas, mantenimiento y apoyo operativo.</p></article>
+</div></div></section>
+
+<section class="about" id="quienes"><div class="wrap aboutGrid"><div>
+<span class="tag">Quiénes somos</span><h2>Una empresa agrícola con experiencia de campo.</h2>
+<p>AGRÍCOLA CANIZALES S.A.S. es una empresa constituida en 2014, con experiencia en actividades agrícolas y agroindustriales y participación en operaciones relacionadas con cultivos de caña de azúcar, maquinaria, coordinación de personal y servicios de campo.</p>
+<div class="stats"><div class="stat"><b>2014</b><span>Año de constitución</span></div><div class="stat"><b>+10 años</b><span>Trayectoria</span></div><div class="stat"><b>Campo</b><span>Enfoque operativo</span></div><div class="stat"><b>Cali</b><span>Valle del Cauca</span></div></div>
+</div><div><h3>Compromiso con cada servicio</h3><div class="checks"><div class="check"><b>✓</b><span>Planeación y coordinación de las actividades contratadas.</span></div><div class="check"><b>✓</b><span>Personal orientado al cumplimiento de las labores de campo.</span></div><div class="check"><b>✓</b><span>Enfoque en seguridad, organización y continuidad operativa.</span></div><div class="check"><b>✓</b><span>Atención a empresas, productores y proyectos agrícolas.</span></div></div></div>
+</div></section>
+
+<section id="portafolio"><div class="wrap"><div class="head"><span class="tag">Experiencia y portafolio</span><h2>Experiencia que respalda nuestro trabajo</h2><p>Antecedentes de operación que hacen parte de la trayectoria empresarial.</p></div>
+<div class="timeline"><div class="item"><strong>Ingenio La Cabaña S.A. · 2015–2022</strong><p>Labores de mantenimiento en cultivos de caña de azúcar, coordinación de personal y organización de actividades en campo.</p></div>
+<div class="item"><strong>Ingenio del Occidente · 2016–2023</strong><p>Operación de alzamiento de caña con una alzadora, tres tractores cadeneros y la mano de obra requerida.</p></div>
+<div class="item"><strong>Control de quemas y contingencias</strong><p>Participación en control de quemas de caña y atención de incendios accidentales mediante vehículos, tanque de agua, bombas y equipos manuales, aplicando protocolos de seguridad.</p></div>
+<div class="item"><strong>Servicios agrícolas</strong><p>Experiencia en coordinación de personal, operación de equipos y ejecución de labores agrícolas y agroindustriales.</p></div></div>
+</div></section>
+
+<section class="cta" id="cotizacion"><div class="wrap ctaGrid"><div><span class="tag" style="background:#ffffff22;color:white">¿Tiene un proyecto?</span><h2>Cuéntenos qué servicio necesita.</h2><p>Esta sección quedará conectada a Supabase para registrar automáticamente las solicitudes de cotización.</p></div><a class="btn light" href="mailto:agricolacanizalessas@gmail.com?subject=Solicitud%20de%20cotización">Solicitar cotización</a></div></section>
+
+<section class="contact" id="contacto"><div class="wrap"><div class="head"><span class="tag">Contacto</span><h2>Estamos para atender sus necesidades agrícolas</h2></div>
+<div class="contactGrid"><div class="box">
+<div class="line"><b>Empresa</b>AGRÍCOLA CANIZALES S.A.S.</div><div class="line"><b>NIT</b>900.765.719-4</div><div class="line"><b>Correo</b><a href="mailto:agricolacanizalessas@gmail.com">agricolacanizalessas@gmail.com</a></div><div class="line"><b>WhatsApp / reservas</b><a href="https://wa.me/573156923501" target="_blank">315 692 3501</a></div>
+</div><div class="box"><div class="line"><b>Horario de oficina</b>Lunes a viernes · 7:30 a. m. – 11:30 a. m.</div><div class="line"><b>Horario de la tarde</b>Lunes a viernes · 2:00 p. m. – 4:30 p. m.</div><div class="line"><b>Ubicación administrativa</b>Cali, Valle del Cauca</div><div class="line"><b>Atención</b>Solicitudes y reservas por WhatsApp y correo electrónico.</div></div></div>
+</div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>AGRÍCOLA CANIZALES S.A.S.</strong><br><small>Cultivando sabor y calidad en cada cosecha.</small></div><small>© 2026 · NIT 900.765.719-4</small></div></footer>
+</body></html>
