@@ -1,134 +1,274 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AGRÍCOLA CANIZALES S.A.S. | Servicios agrícolas</title>
-<meta name="description" content="AGRÍCOLA CANIZALES S.A.S. Servicios agrícolas, caña de azúcar, palma de aceite, piña, manejo ambiental, residuos orgánicos, maquinaria y servicios de campo.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrícola Canizales S.A.S. | Servicios agrícolas</title>
+<meta name="description" content="Agrícola Canizales S.A.S. Servicios agrícolas en caña de azúcar, palma de aceite, piña, maquinaria, medio ambiente y manejo de residuos orgánicos.">
 <style>
-:root{--green:#174d2b;--green2:#28733f;--lime:#8dbb45;--cream:#f5f2e8;--ink:#17301f;--muted:#657269;--line:#e2e9e2}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
-header{position:sticky;top:0;z-index:50;background:#fffffff5;backdrop-filter:blur(8px);border-bottom:1px solid #e7ece7}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;gap:11px;align-items:center;color:var(--green);font-weight:800}.brand img{width:58px;height:58px;object-fit:contain}.brand small{display:block;color:#718077;font-size:10px;letter-spacing:1px}nav{display:flex;gap:15px;align-items:center;font-size:14px;font-weight:700}nav a:hover{color:var(--green2)}
-.btn{display:inline-block;padding:12px 19px;border-radius:999px;font-weight:800;border:0;cursor:pointer}.primary{background:var(--green);color:#fff}.light{background:#fff;color:var(--green);border:1px solid #d8e2d9}
-.hero{background:radial-gradient(circle at 82% 15%,#dcebc8,transparent 30%),linear-gradient(120deg,#eef5e9,#fff 60%,#f3f7ef)}.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center;padding:70px 0}.heroLogo{max-width:520px;width:100%;margin-bottom:10px}.tag{display:inline-block;background:#e4f0dd;color:var(--green2);padding:7px 13px;border-radius:999px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.7px}
-h1{font-size:clamp(42px,6vw,70px);line-height:1.02;letter-spacing:-2.5px;margin:18px 0}h1 span{color:var(--green2)}h2{font-size:clamp(30px,4vw,46px);line-height:1.08;margin:0 0 12px}h3{margin-top:0}.hero p{font-size:18px;color:#526058;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.art{height:420px;border-radius:32px;background:linear-gradient(145deg,#1b5630,#79a944);position:relative;overflow:hidden;box-shadow:0 18px 50px #11321b22}.artTitle{position:absolute;top:28px;left:28px;color:#fff;font-weight:800}.artTitle small{display:block;color:#eaf5e8;margin-top:3px}.rows{position:absolute;left:35px;right:35px;bottom:45px;height:280px;display:flex;gap:5px;align-items:end;transform:skewY(-5deg)}.row{flex:1;background:linear-gradient(90deg,#3f7e39,#a3c85c);border-radius:70% 70% 8px 8px}.row:nth-child(1){height:55%}.row:nth-child(2){height:78%}.row:nth-child(3){height:62%}.row:nth-child(4){height:85%}.row:nth-child(5){height:67%}.row:nth-child(6){height:80%}.tractor{position:absolute;right:35px;bottom:35px;font-size:72px}
-section{padding:78px 0}.head{max-width:780px;margin-bottom:32px}.head p{color:var(--muted)}.about{background:var(--cream)}.aboutGrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.checks{display:grid;gap:12px;margin-top:20px}.check{display:flex;gap:10px}.check b{color:var(--green2)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:25px;border:1px solid var(--line);border-radius:22px;box-shadow:0 8px 30px #14371e0d;background:#fff}.icon{width:52px;height:52px;border-radius:16px;background:#e9f3df;display:grid;place-items:center;font-size:25px;margin-bottom:14px}.card p{color:var(--muted)}
-.service-area{border:1px solid var(--line);border-radius:22px;margin:16px 0;background:#fff;overflow:hidden}.service-area summary{cursor:pointer;list-style:none;padding:22px 25px;font-size:19px;font-weight:800;color:var(--green);display:flex;align-items:center;justify-content:space-between;background:#f8faf7}.service-area summary::-webkit-details-marker{display:none}.service-area summary:after{content:"＋";font-size:25px}.service-area[open] summary:after{content:"−"}.service-body{padding:22px 25px}.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.service-item{padding:14px;border:1px solid #e7ece7;border-radius:14px;background:#fbfcfa;display:grid;grid-template-columns:1fr 120px;gap:12px;align-items:center}.service-item span{font-weight:700}.service-item small{display:block;color:var(--muted);font-weight:400}.price{width:100%;padding:9px;border:1px solid #d8e2d9;border-radius:9px;text-align:right}.note{margin-top:15px;color:var(--muted);font-size:13px}
-.timeline{display:grid;grid-template-columns:1fr 1fr;gap:18px}.item{border-left:4px solid var(--lime);padding:20px 24px;background:#f8faf7;border-radius:0 18px 18px 0}.item strong{color:var(--green)}
-.cta{background:linear-gradient(120deg,var(--green),#2e7542);color:#fff}.ctaGrid{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta p{color:#e4efe6;max-width:700px}
-.contact{background:#f6f8f4}.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.box{background:#fff;border:1px solid #e3e9e2;border-radius:22px;padding:26px}.line{padding:12px 0;border-bottom:1px solid #edf0ec}.line:last-child{border:0}.line b{display:block;font-size:13px;color:#718076}
-form{display:grid;gap:14px}.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:13px;font-weight:800;color:var(--green)}input,select,textarea{width:100%;padding:12px 13px;border:1px solid #d8e2d9;border-radius:10px;font:inherit;background:#fff}textarea{min-height:120px;resize:vertical}.result{margin-top:12px;padding:12px;border-radius:10px;background:#eef6e9;color:var(--green);display:none}
-footer{background:#102718;color:#dce9df;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px}.foot small{color:#aebdb2}
-@media(max-width:950px){nav{display:none}.heroGrid,.aboutGrid,.contactGrid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr}}
-@media(max-width:650px){section{padding:60px 0}.cards,.service-grid,.formGrid{grid-template-columns:1fr}.heroGrid{padding:55px 0}.art{height:310px}.service-item{grid-template-columns:1fr}.foot,.ctaGrid{flex-direction:column;align-items:flex-start}}
+:root{--g:#174d2b;--g2:#28733f;--l:#8dbb45;--cream:#f5f2e8;--ink:#17301f;--muted:#647267;--white:#fff;--line:#dfe7df;--shadow:0 14px 40px rgba(23,77,43,.12)}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fbfcf8;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--g)}
+.brand img{width:58px;height:58px;object-fit:contain}
+.brand span{line-height:1.1}.brand small{display:block;font-weight:500;color:var(--muted);margin-top:4px}
+nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+nav a{font-size:14px;font-weight:700;color:#294734}
+nav a:hover{color:var(--g2)}
+.hero{background:linear-gradient(135deg,#eaf4e9 0%,#fff 55%,#edf4dc 100%);padding:82px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}
+.kicker{display:inline-block;background:#dcebd6;color:var(--g);padding:7px 13px;border-radius:999px;font-weight:800;font-size:13px}
+h1{font-size:clamp(40px,6vw,70px);line-height:1.03;margin:18px 0}
+h2{font-size:clamp(30px,4vw,44px);line-height:1.1;margin:0 0 16px}
+h3{margin:8px 0;font-size:20px}
+.lead{font-size:19px;color:var(--muted);max-width:700px}
+.btn{display:inline-block;padding:13px 20px;border-radius:12px;font-weight:800;margin:8px 8px 0 0;border:2px solid var(--g)}
+.btn.primary{background:var(--g);color:white}.btn.secondary{background:white;color:var(--g)}
+.hero-card{background:white;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow)}
+.hero-card img{display:block;width:100%;max-width:320px;height:auto;margin:auto;object-fit:contain}
+section{padding:78px 0}
+.section-head{max-width:760px;margin-bottom:34px}
+.section-head p{color:var(--muted);font-size:17px}
+.grid{display:grid;gap:20px}
+.cards{grid-template-columns:repeat(3,1fr)}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 25px rgba(23,77,43,.06)}
+.icon{font-size:30px}
+.about{background:var(--cream)}
+.two{grid-template-columns:1fr 1fr;align-items:start}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:25px}
+.stat{background:white;border-radius:16px;padding:20px;text-align:center;border:1px solid var(--line)}
+.stat strong{display:block;font-size:29px;color:var(--g)}
+.team{grid-template-columns:repeat(2,1fr)}
+.person{display:flex;gap:18px;align-items:flex-start;background:white;border:1px solid var(--line);border-radius:16px;padding:18px}
+.avatar{width:58px;height:58px;border-radius:50%;background:#dcebd6;display:grid;place-items:center;color:var(--g);font-weight:900;flex:0 0 auto}
+.person p{margin:0;color:var(--muted)}
+.portfolio{background:#f2f7ee}
+.experience{grid-template-columns:repeat(2,1fr)}
+.timeline{border-left:3px solid var(--l);padding-left:20px}
+.timeline article{margin-bottom:25px}
+.timeline strong{color:var(--g)}
+.form-wrap{background:white;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.full{grid-column:1/-1}
+label{font-weight:700;font-size:14px}
+input,select,textarea{width:100%;margin-top:6px;padding:12px 13px;border:1px solid #cfdad0;border-radius:10px;font:inherit;background:#fff}
+textarea{min-height:120px;resize:vertical}
+.notice{background:#eef6ea;border-left:5px solid var(--l);padding:15px;border-radius:8px;color:#36533d}
+.contact-box{background:var(--g);color:white;border-radius:22px;padding:34px}
+.contact-box p{color:#e8f2e9}
+footer{background:#102f1b;color:#dbe8dd;padding:35px 0}
+footer a{color:white}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){
+.hero-grid,.two{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}
+nav{gap:10px}.nav{align-items:flex-start;padding:12px 0;flex-direction:column}
+}
+@media(max-width:620px){
+.cards,.team,.experience,.stats,form{grid-template-columns:1fr}
+.hero{padding-top:55px}section{padding:58px 0}.brand img{width:48px;height:48px}
+nav{font-size:13px}.person{padding:15px}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap nav">
-<a class="brand" href="#inicio"><img src="logo-agricola-canizales.png" alt="Logo AGRÍCOLA CANIZALES S.A.S."><div>AGRÍCOLA CANIZALES S.A.S.<small>NIT 900.765.719-4</small></div></a>
-<nav><a href="#inicio">Inicio</a><a href="#quienes">Quiénes somos</a><a href="#servicios">Servicios</a><a href="#experiencia">Experiencia</a><a href="#portafolio">Portafolio</a><a class="btn primary" href="#cotizar">Cotizar</a></nav>
-</div></header>
 
-<main id="inicio">
-<section class="hero"><div class="wrap heroGrid"><div>
-<img class="heroLogo" src="logo-agricola-canizales.png" alt="AGRÍCOLA CANIZALES S.A.S.">
-<span class="tag">Servicios agrícolas y operación de campo</span>
-<h1>Cultivando <span>experiencia y calidad</span> en cada servicio.</h1>
-<p>Soluciones para el sector agrícola con experiencia en cultivos de caña de azúcar, palma de aceite, piña, manejo ambiental, residuos orgánicos, maquinaria y operación de campo.</p>
-<div class="actions"><a class="btn primary" href="#cotizar">Solicitar cotización</a><a class="btn light" href="#servicios">Ver servicios</a></div>
-</div><div class="art"><div class="artTitle">AGRÍCOLA CANIZALES<small>Campo · Maquinaria · Producción · Ambiente</small></div><div class="rows"><i class="row"></i><i class="row"></i><i class="row"></i><i class="row"></i><i class="row"></i><i class="row"></i></div><div class="tractor">🚜</div></div></div></section>
+<header>
+<div class="container nav">
+<a class="brand" href="#inicio">
+<img src="logo-agricola-canizales.png" alt="Logo Agrícola Canizales S.A.S.">
+<span>AGRÍCOLA CANIZALES S.A.S.<small>NIT 900.765.719-4</small></span>
+</a>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#quienes">Quiénes somos</a>
+<a href="#equipo">Nuestro equipo</a>
+<a href="#servicios">Servicios</a>
+<a href="#portafolio">Portafolio</a>
+<a href="#cotizar">Cotizar</a>
+<a href="#orden">Orden de servicios</a>
+<a href="#contacto">Contacto</a>
+</nav>
+</div>
+</header>
 
-<section id="quienes" class="about"><div class="wrap aboutGrid"><div>
-<span class="tag">Quiénes somos</span><h2>Experiencia agrícola con capacidad operativa.</h2>
-<p>AGRÍCOLA CANIZALES S.A.S. desarrolla servicios agrícolas y de apoyo operativo para empresas, productores y proyectos del sector rural. Nuestra experiencia comprende labores de campo, coordinación de personal, maquinaria y actividades relacionadas con cultivos y manejo ambiental.</p>
-<p><strong>Área de influencia:</strong> Norte del Cauca y suroriente del Valle del Cauca.</p>
-<p><strong>Sede administrativa general:</strong> Calle 26 E No. 37-46, Cali, Valle del Cauca.</p>
-<p><strong>Sede operativa para el Cauca:</strong> corregimiento El Chamizo, Padilla, Cauca.</p>
-</div><div><h3>Compromiso con cada servicio</h3><div class="checks"><div class="check"><b>✓</b><span>Planeación y coordinación de las actividades contratadas.</span></div><div class="check"><b>✓</b><span>Personal orientado al cumplimiento de las labores de campo.</span></div><div class="check"><b>✓</b><span>Organización, seguridad y continuidad operativa.</span></div><div class="check"><b>✓</b><span>Atención a empresas, productores y proyectos agrícolas.</span></div></div></div></div></section>
+<main>
+<section class="hero" id="inicio">
+<div class="container hero-grid">
+<div>
+<span class="kicker">SERVICIOS AGRÍCOLAS INTEGRALES</span>
+<h1>Cultivando sabor y calidad en cada cosecha.</h1>
+<p class="lead">Soluciones para el sector agrícola en caña de azúcar, palma de aceite, piña, maquinaria, medio ambiente y manejo de residuos orgánicos.</p>
+<a class="btn primary" href="#cotizar">Solicitar cotización</a>
+<a class="btn secondary" href="#servicios">Ver servicios</a>
+</div>
+<div class="hero-card">
+<img src="logo-agricola-canizales.png" alt="Agrícola Canizales S.A.S.">
+<h3>Experiencia y compromiso con el campo</h3>
+<p class="small">Atendemos proyectos agrícolas con enfoque operativo, técnico y de servicio.</p>
+</div>
+</div>
+</section>
 
-<section id="servicios"><div class="wrap"><div class="head"><span class="tag">Servicios</span><h2>Seleccione un área y consulte las labores disponibles</h2><p>Las áreas están organizadas en listas desplegables. Las tarifas son campos preparados para conectarse con el módulo administrativo.</p></div>
+<section id="quienes" class="about">
+<div class="container two grid">
+<div>
+<h2>Quiénes somos</h2>
+<p>Agrícola Canizales S.A.S. es una empresa dedicada a la prestación de servicios agrícolas y de apoyo al sector productivo. Nuestra trayectoria está vinculada al trabajo de campo y a la atención de operaciones agrícolas desde 2014.</p>
+<p>Contamos con experiencia en labores relacionadas con cultivos, preparación de suelos, mantenimiento, riego, alzamiento de caña, maquinaria, atención de contingencias y manejo ambiental.</p>
+<div class="stats">
+<div class="stat"><strong>2014</strong><span>Trayectoria</span></div>
+<div class="stat"><strong>10+</strong><span>Años de experiencia</span></div>
+<div class="stat"><strong>CAÑA</strong><span>Sector agrícola</span></div>
+<div class="stat"><strong>CALI</strong><span>Valle del Cauca</span></div>
+</div>
+</div>
+<div>
+<h3>Misión</h3><p>Prestar servicios agrícolas confiables y oportunos, aportando personal, experiencia y capacidad operativa para el desarrollo eficiente de las labores de nuestros clientes.</p>
+<h3>Visión</h3><p>Consolidarnos como un aliado reconocido en la prestación de servicios agrícolas, destacándonos por responsabilidad, calidad, cumplimiento y compromiso con el desarrollo sostenible.</p>
+<h3>Valores</h3><p><strong>Responsabilidad · Cumplimiento · Seguridad · Calidad · Trabajo en equipo · Respeto por el ambiente</strong></p>
+</div>
+</div>
+</section>
 
-<details class="service-area" open><summary>🌱 Cultivo de caña de azúcar</summary><div class="service-body"><div class="service-grid">
-<div class="service-item"><span>Preparación y adecuación de terrenos<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Preparación de suelos<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Surcado<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Siembra<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Fertilización<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Control de malezas<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Control de plagas y enfermedades<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Riego y mantenimiento de riego<small>Hectárea / jornada</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Drenajes y adecuaciones<small>Hectárea / jornada</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Mantenimiento del cultivo<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Corte y apoyo a cosecha<small>Tonelada / hectárea</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Alzamiento de caña<small>Tonelada / jornada</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Transporte y apoyo logístico<small>Viaje / jornada</small></span><input class="price" placeholder="$ Tarifa"></div>
-<div class="service-item"><span>Control de quemas y contingencias<small>Jornada / servicio</small></span><input class="price" placeholder="$ Tarifa"></div>
-</div></div></details>
+<section id="equipo">
+<div class="container">
+<div class="section-head"><h2>Nuestro equipo</h2><p>Personal con formación técnica y experiencia para apoyar diferentes operaciones agrícolas.</p></div>
+<div class="grid team">
+<div class="person"><div class="avatar">MP</div><div><h3>Mauricio Peña</h3><p>Ingeniero Agrícola</p></div></div>
+<div class="person"><div class="avatar">FP</div><div><h3>Fabio Prado Mera</h3><p>Tecnólogo en Producción Agrícola</p></div></div>
+<div class="person"><div class="avatar">EC</div><div><h3>Eduin Canizales</h3><p>Coordinador General</p></div></div>
+<div class="person"><div class="avatar">RM</div><div><h3>Raumir Monpotes</h3><p>Tecnólogo en Producción Agrícola</p></div></div>
+<div class="person"><div class="avatar">YM</div><div><h3>Yuri Mosquera</h3><p>Técnica en Cultivo de Caña y Preparación de Suelos</p></div></div>
+<div class="person"><div class="avatar">JB</div><div><h3>Javier Ernesto Belalcazar</h3><p>Técnico en Cultivo de Caña, Preparación de Suelos y Riegos</p></div></div>
+<div class="person"><div class="avatar">LC</div><div><h3>Luis Felipe Canizales Tobar</h3><p>Tecnólogo en Producción Agrícola y Mantenimiento Industrial · Administrador de Finca Cañera</p></div></div>
+<div class="person"><div class="avatar">PC</div><div><h3>Paola Canizales Tobar</h3><p>Técnica en Cultivos Agropecuarios Sostenibles</p></div></div>
+<div class="person"><div class="avatar">OC</div><div><h3>Oscar Andres Cambindo Canizales</h3><p>Técnico en Producción Agrícola</p></div></div>
+<div class="person"><div class="avatar">LA</div><div><h3>Luis Arvey Baldomero Canizales</h3><p>Técnico en Operación de Montacargas y Transporte Especial</p></div></div>
+</div>
+</div>
+</section>
 
-<details class="service-area"><summary>🌴 Cultivo de palma de aceite</summary><div class="service-body"><div class="service-grid">
-<div class="service-item"><span>Preparación del terreno<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Siembra y establecimiento<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Fertilización<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Manejo de malezas<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Manejo fitosanitario<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Poda y mantenimiento<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Cosecha y recolección<small>Tonelada / hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Transporte y apoyo operativo<small>Viaje / jornada</small></span><input class="price" placeholder="$ Tarifa"></div>
-</div></div></details>
+<section id="servicios" class="portfolio">
+<div class="container">
+<div class="section-head"><h2>Nuestros servicios</h2><p>Servicios diseñados para apoyar las diferentes etapas de la operación agrícola.</p></div>
+<div class="grid cards">
+<div class="card"><div class="icon">🌱</div><h3>Caña de azúcar</h3><p>Preparación, establecimiento, mantenimiento y labores de campo para el cultivo.</p></div>
+<div class="card"><div class="icon">🚜</div><h3>Maquinaria agrícola</h3><p>Apoyo con maquinaria y personal para labores mecanizadas y operaciones de campo.</p></div>
+<div class="card"><div class="icon">🧱</div><h3>Preparación de suelos</h3><p>Adecuación y preparación de terrenos según las condiciones y necesidades del cultivo.</p></div>
+<div class="card"><div class="icon">💧</div><h3>Riegos</h3><p>Apoyo operativo en labores de riego y manejo de recursos para el cultivo.</p></div>
+<div class="card"><div class="icon">🌾</div><h3>Alzamiento y manejo de caña</h3><p>Apoyo en operaciones de alce, transporte interno y manejo de caña.</p></div>
+<div class="card"><div class="icon">♻️</div><h3>Medio ambiente</h3><p>Manejo de residuos orgánicos, limpieza y apoyo a labores ambientales.</p></div>
+<div class="card"><div class="icon">🌴</div><h3>Palma de aceite</h3><p>Servicios de apoyo a operaciones agrícolas en cultivos de palma.</p></div>
+<div class="card"><div class="icon">🍍</div><h3>Piña y otros cultivos</h3><p>Apoyo técnico y operativo para diferentes actividades del sector agrícola.</p></div>
+<div class="card"><div class="icon">🔥</div><h3>Contingencias agrícolas</h3><p>Apoyo operativo para control de incendios y atención de situaciones de campo.</p></div>
+</div>
+</div>
+</section>
 
-<details class="service-area"><summary>🍍 Cultivo de piña</summary><div class="service-body"><div class="service-grid">
-<div class="service-item"><span>Preparación del terreno<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Preparación de camas<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Siembra<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Fertilización<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Control de malezas<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Manejo fitosanitario<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Riego y mantenimiento<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Cosecha y selección<small>Tonelada / jornada</small></span><input class="price" placeholder="$ Tarifa"></div>
-</div></div></details>
+<section id="portafolio">
+<div class="container">
+<div class="section-head"><h2>Portafolio y experiencia</h2><p>Una presentación comercial de nuestras capacidades y trayectoria.</p></div>
+<div class="grid experience">
+<div class="timeline">
+<article><strong>Ingenio La Cabaña S.A. · 2015–2022</strong><p>Experiencia en mantenimiento y labores relacionadas con el cultivo de caña.</p></article>
+<article><strong>Ingenio del Occidente · 2016–2023</strong><p>Experiencia en alce de caña, operación con equipos y apoyo a labores de campo.</p></article>
+<article><strong>Control de incendios y contingencias</strong><p>Apoyo operativo con vehículos, tanques, bombas, herramientas y protocolos de seguridad.</p></article>
+</div>
+<div>
+<div class="card"><h3>Tarifas y condiciones comerciales</h3><p>Las tarifas se establecen mediante cotización previa, de acuerdo con el tipo de labor, área, ubicación, maquinaria requerida, duración y condiciones particulares del proyecto.</p><div class="notice"><strong>Trabajamos buscando condiciones comerciales de beneficio mutuo para nuestros clientes y Agrícola Canizales S.A.S.</strong></div><a class="btn primary" href="#cotizar">Solicitar cotización</a></div>
+</div>
+</div>
+</div>
+</section>
 
-<details class="service-area"><summary>🌿 Manejo ambiental</summary><div class="service-body"><div class="service-grid">
-<div class="service-item"><span>Reforestación<small>Hectárea / árbol</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Restauración de áreas<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Protección de fuentes hídricas<small>Proyecto / hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Control de erosión<small>Jornada / proyecto</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Mantenimiento de áreas reforestadas<small>Hectárea</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Educación y apoyo ambiental<small>Jornada</small></span><input class="price" placeholder="$ Tarifa"></div>
-</div></div></details>
+<section id="cotizar" class="about">
+<div class="container">
+<div class="section-head"><h2>Solicitar cotización</h2><p>Cuéntenos qué servicio necesita y prepararemos una propuesta de acuerdo con las condiciones de su proyecto.</p></div>
+<div class="form-wrap">
+<form onsubmit="enviarFormulario(event,'cotizacion')">
+<div><label>Nombre o empresa<input name="nombre" required></label></div>
+<div><label>Teléfono / WhatsApp<input name="telefono" required></label></div>
+<div><label>Correo electrónico<input type="email" name="correo"></label></div>
+<div><label>Servicio<select name="servicio" required><option value="">Seleccione</option><option>Caña de azúcar</option><option>Maquinaria agrícola</option><option>Preparación de suelos</option><option>Riegos</option><option>Alzamiento de caña</option><option>Palma de aceite</option><option>Piña</option><option>Medio ambiente y residuos orgánicos</option><option>Otro</option></select></label></div>
+<div><label>Finca / lugar<input name="lugar" required></label></div>
+<div><label>Área aproximada<input name="area" placeholder="Ej. 20 hectáreas"></label></div>
+<div><label>Fecha requerida<input type="date" name="fecha"></label></div>
+<div><label>Municipio<input name="municipio"></label></div>
+<div class="full"><label>Descripción de la labor<textarea name="descripcion" required></textarea></label></div>
+<div class="full"><button class="btn primary" type="submit">Enviar solicitud</button><span id="cotizacion-msg" class="small"></span></div>
+</form>
+</div>
+</div>
+</section>
 
-<details class="service-area"><summary>♻️ Manejo de residuos orgánicos</summary><div class="service-body"><div class="service-grid">
-<div class="service-item"><span>Recolección de residuos orgánicos<small>Tonelada / viaje</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Separación y clasificación<small>Tonelada / jornada</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Compostaje<small>Tonelada</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Producción de abono orgánico<small>Tonelada</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Aprovechamiento de residuos vegetales<small>Tonelada</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Transporte y manejo<small>Viaje / tonelada</small></span><input class="price" placeholder="$ Tarifa"></div>
-</div></div></details>
+<section id="orden">
+<div class="container">
+<div class="section-head"><h2>Orden de servicios</h2><p>Formulario preparado para registrar la orden de trabajo después de la aprobación de una cotización.</p></div>
+<div class="form-wrap">
+<form onsubmit="enviarFormulario(event,'orden')">
+<div><label>Cliente / empresa<input name="cliente" required></label></div>
+<div><label>NIT o documento<input name="documento"></label></div>
+<div><label>Teléfono<input name="telefono" required></label></div>
+<div><label>Correo<input type="email" name="correo"></label></div>
+<div><label>Servicio contratado<input name="servicio" required></label></div>
+<div><label>Finca / lugar<input name="lugar" required></label></div>
+<div><label>Municipio<input name="municipio"></label></div>
+<div><label>Área a intervenir<input name="area"></label></div>
+<div><label>Fecha de inicio<input type="date" name="inicio"></label></div>
+<div><label>Fecha estimada de terminación<input type="date" name="fin"></label></div>
+<div class="full"><label>Descripción y condiciones<textarea name="descripcion"></textarea></label></div>
+<div><label>Valor del servicio<input name="valor" placeholder="$"></label></div>
+<div><label>Forma de pago<input name="pago"></label></div>
+<div class="full"><label>Observaciones<textarea name="observaciones"></textarea></label></div>
+<div class="full"><button class="btn primary" type="submit">Registrar orden</button><span id="orden-msg" class="small"></span></div>
+</form>
+</div>
+</div>
+</section>
 
-<details class="service-area"><summary>🚜 Maquinaria y servicios de campo</summary><div class="service-body"><div class="service-grid">
-<div class="service-item"><span>Tractor y labores mecanizadas<small>Hora / jornada</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Alzadora de caña<small>Hora / tonelada</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Bombas y equipos de agua<small>Jornada</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Tanque y suministro de agua<small>Viaje / jornada</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Personal operativo<small>Trabajador / jornada</small></span><input class="price" placeholder="$ Tarifa"></div><div class="service-item"><span>Apoyo logístico y transporte<small>Viaje / jornada</small></span><input class="price" placeholder="$ Tarifa"></div>
-</div></div></details>
-</div></section>
-
-<section id="experiencia" class="about"><div class="wrap"><div class="head"><span class="tag">Experiencia</span><h2>Experiencia empresarial y de campo</h2><p>La experiencia se presenta por empresa y actividad para evitar repetir el contenido del catálogo de servicios.</p></div><div class="timeline">
-<div class="item"><strong>Ingenio La Cabaña S.A.</strong><p>Experiencia en labores de mantenimiento de cultivos de caña de azúcar, coordinación de personal, organización de actividades agrícolas y apoyo a la operación de campo.</p></div>
-<div class="item"><strong>Ingenio de Occidente</strong><p>Experiencia en operación de alzamiento de caña mediante alzadora, tres tractores cadeneros y personal requerido para la operación.</p></div>
-<div class="item"><strong>Control de quemas y contingencias · Ingenio de Occidente</strong><p>Participación en control de quemas de caña y atención de incendios accidentales mediante vehículos, tanque de agua, bombas y equipos manuales, aplicando protocolos de seguridad.</p></div>
-<div class="item"><strong>Servicios agrícolas y agroindustriales</strong><p>Coordinación de personal, operación de equipos, mantenimiento de cultivos y ejecución de labores de campo de acuerdo con las necesidades de cada proyecto.</p></div>
-</div></div></section>
-
-<section id="portafolio"><div class="wrap"><div class="head"><span class="tag">Portafolio</span><h2>Áreas de servicio para empresas y productores</h2><p>Seleccione un área para conocer las labores que podemos cotizar.</p></div><div class="cards">
-<div class="card"><div class="icon">🌱</div><h3>Caña de azúcar</h3><p>Establecimiento, mantenimiento, cosecha, alzamiento, transporte y contingencias.</p><a class="btn light" href="#servicios">Ver labores</a></div>
-<div class="card"><div class="icon">🌴</div><h3>Palma de aceite</h3><p>Establecimiento, mantenimiento, manejo fitosanitario, poda y cosecha.</p><a class="btn light" href="#servicios">Ver labores</a></div>
-<div class="card"><div class="icon">🍍</div><h3>Piña</h3><p>Preparación, siembra, mantenimiento, manejo fitosanitario y cosecha.</p><a class="btn light" href="#servicios">Ver labores</a></div>
-<div class="card"><div class="icon">🌿</div><h3>Manejo ambiental</h3><p>Reforestación, restauración, protección hídrica y control de erosión.</p><a class="btn light" href="#servicios">Ver labores</a></div>
-<div class="card"><div class="icon">♻️</div><h3>Residuos orgánicos</h3><p>Recolección, aprovechamiento, compostaje y producción de abono.</p><a class="btn light" href="#servicios">Ver labores</a></div>
-<div class="card"><div class="icon">🚜</div><h3>Maquinaria y campo</h3><p>Maquinaria, equipos, personal operativo, agua y apoyo logístico.</p><a class="btn light" href="#servicios">Ver labores</a></div>
-</div></div></section>
-
-<section class="cta" id="cotizar"><div class="wrap ctaGrid"><div><span class="tag" style="background:#ffffff22;color:white">Solicitar cotización</span><h2>Cuéntenos qué servicio necesita.</h2><p>Seleccione el área, la labor, la ubicación y la cantidad aproximada. El sistema podrá conectar esta solicitud con la base de datos.</p></div><a class="btn light" href="#formulario">Ir al formulario</a></div></section>
-
-<section id="formulario" class="contact"><div class="wrap"><div class="head"><span class="tag">Cotización</span><h2>Solicite una cotización</h2><p>Formulario preparado para conectarse con Supabase.</p></div><div class="contactGrid">
-<div class="box"><form id="quoteForm"><div class="formGrid"><div><label>Nombre *</label><input required></div><div><label>Empresa</label><input></div><div><label>Teléfono *</label><input required></div><div><label>Correo electrónico *</label><input type="email" required></div></div><div class="formGrid"><div><label>Área de servicio *</label><select required><option value="">Seleccione...</option><option>Cultivo de caña de azúcar</option><option>Cultivo de palma de aceite</option><option>Cultivo de piña</option><option>Manejo ambiental</option><option>Manejo de residuos orgánicos</option><option>Maquinaria y servicios de campo</option></select></div><div><label>Servicio o labor *</label><input required placeholder="Ej.: Alzamiento de caña"></div><div><label>Ubicación del proyecto</label><input></div><div><label>Hectáreas / cantidad</label><input type="number" min="0" step="0.01"></div></div><div><label>Mensaje / detalles *</label><textarea required></textarea></div><button class="btn primary" type="submit">Enviar solicitud</button><div class="result" id="result">Solicitud preparada. La conexión con Supabase se activará en el siguiente paso.</div></form></div>
-<div class="box">
-<div class="line"><b>Empresa</b>AGRÍCOLA CANIZALES S.A.S.</div>
-<div class="line"><b>NIT</b>900.765.719-4</div>
-<div class="line"><b>Dirección administrativa general</b>Calle 26 E No. 37-46, Cali, Valle del Cauca</div>
-<div class="line"><b>Sede operativa para el Cauca</b>Corregimiento El Chamizo, Padilla, Cauca</div>
-<div class="line"><b>Teléfonos</b>602 340 7730 · 315 692 3501</div>
-<div class="line"><b>WhatsApp</b><a href="https://wa.me/573108207849" target="_blank" rel="noopener">310 820 7849</a></div>
-<div class="line"><b>Correo</b><a href="mailto:agricolacanizalessas@gmail.com">agricolacanizalessas@gmail.com</a></div>
-<div class="line"><b>Área de influencia</b>Norte del Cauca y suroriente del Valle del Cauca</div>
-</div></div></div></section>
+<section id="contacto" class="about">
+<div class="container two grid">
+<div>
+<h2>Contacto</h2>
+<p><strong>Agrícola Canizales S.A.S.</strong></p>
+<p>NIT 900.765.719-4</p>
+<p>📧 <a href="mailto:agricolacanizalessas@gmail.com">agricolacanizalessas@gmail.com</a></p>
+<p>📱 <a href="https://wa.me/573156923501" target="_blank" rel="noopener">WhatsApp 315 692 3501</a></p>
+<p>📍 Cali, Valle del Cauca, Colombia</p>
+<p>🕒 Lunes a viernes: 7:30–11:30 a. m. y 2:00–4:30 p. m.</p>
+<a class="btn primary" href="https://wa.me/573156923501?text=Hola%20Agr%C3%ADcola%20Canizales%2C%20quiero%20solicitar%20informaci%C3%B3n." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+</div>
+<div class="contact-box">
+<h3>¿Tiene un proyecto agrícola?</h3>
+<p>Envíenos los datos básicos de la labor y coordinaremos la información necesaria para elaborar su cotización.</p>
+<a class="btn secondary" href="#cotizar">Solicitar cotización</a>
+</div>
+</div>
+</section>
 </main>
 
-<footer><div class="wrap foot"><div><strong>AGRÍCOLA CANIZALES S.A.S.</strong><br><small>Cultivando sabor y calidad en cada cosecha.</small></div><small>© 2026 · NIT 900.765.719-4</small></div></footer>
+<footer>
+<div class="container">
+<strong>AGRÍCOLA CANIZALES S.A.S.</strong>
+<p class="small" style="color:#cbd9ce">Servicios en caña de azúcar, palma de aceite, piña, medio ambiente, manejo de residuos orgánicos y apoyo con maquinaria agrícola.</p>
+<p class="small" style="color:#cbd9ce">© 2026 Agrícola Canizales S.A.S. · NIT 900.765.719-4</p>
+</div>
+</footer>
 
 <script>
-document.getElementById('quoteForm').addEventListener('submit',function(e){
+function enviarFormulario(e,tipo){
  e.preventDefault();
- const r=document.getElementById('result');
- r.style.display='block';
- r.textContent='Solicitud preparada correctamente. En el siguiente paso conectaremos este formulario con Supabase.';
-});
+ const form=e.target;
+ const msg=document.getElementById(tipo==='cotizacion'?'cotizacion-msg':'orden-msg');
+ const data=new FormData(form);
+ let texto=tipo==='cotizacion'?'Solicitud de cotización recibida en este formulario.':'Orden de servicio preparada para registro.';
+ msg.textContent=' '+texto+' Próximamente la conectaremos con Supabase.';
+ form.reset();
+}
 </script>
 </body>
 </html>
